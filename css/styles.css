@@ -93,11 +93,7 @@ img {
 }
 
 
-
-
-
 /* Header/////////////////// */
-
 
 /* Нижний бордер на хедере */
 .header {
@@ -184,7 +180,9 @@ img {
 /* Контакты в хедере */
 .header-phone,
 .header-mail {
-  display: block;
+  display: flex;
+  text-align: center;
+
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -439,8 +437,6 @@ img {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
-  padding: 16px 32px;
-
   justify-content: center;
   align-items: center; 
 }
@@ -549,13 +545,6 @@ img {
 }
 
 
-/* Ховер и фокус в каждом проекте портфолио */
-.projects-title:hover,
-.projects-text:hover,
-.projects-title:focus,
-.projects-text:focus {
-  color: var(--accent-text-color);
-}
 
 /* Футер */
 
@@ -568,6 +557,7 @@ img {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .address-wrapper {
@@ -616,7 +606,6 @@ img {
   text-transform: uppercase;
   color: #ffffff;
 
-  margin-top: 12px;
   margin-bottom: 20px;
 }
 
